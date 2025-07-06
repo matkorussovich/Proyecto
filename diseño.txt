@@ -1,0 +1,64 @@
+/Proyecto/
+├── /app/                     # Código fuente principal
+│   ├── /agente/              # Lógica específica del agente LangChain
+│   │   ├── __init__.py
+│   │   ├── agent_setup.py    # Configuración y creación del agente
+│   │   └── prompt.py         # Definición de prompts y mensajes del sistema
+│   │
+│   ├── /database/            # Interacción con la base de datos PostgreSQL
+│   │   ├── __init__.py
+│   │   ├── connection.py     # Conexión a la base de datos
+│   │   └── crud.py           # Funciones CRUD para reservas e instalaciones
+│   │
+│   ├── /rag/                 # Recuperación aumentada de información (RAG)
+│   │   ├── __init__.py
+│   │   └── retriever.py      # Funciones para buscar información en Pinecone
+│   │
+│   ├── /tools/               # Definición de herramientas y esquemas para el agente
+│   │   ├── __init__.py
+│   │   ├── definitions.py    # Definición de herramientas (Tools)
+│   │   └── schemas.py        # Esquemas Pydantic para validación de argumentos
+│   │
+│   ├── /whatsapp/            # Integración y manejo de mensajes WhatsApp
+│   │   ├── __init__.py
+│   │   └── handler.py        # Procesamiento de mensajes y respuestas WhatsApp
+│   │
+│   ├── /notifications/       # Notificaciones externas (WhatsApp, email, etc.)
+│   │   ├── __init__.py
+│   │   └── whatsapp.py       # Envío de mensajes WhatsApp
+│   │
+│   ├── /memory/              # Gestión de memoria conversacional (S3, Postgres)
+│   │   ├── __init__.py
+│   │   └── s3_postgres_history.py # Historial de chats en S3/Postgres
+│   │
+│   ├── __init__.py
+│   └── main.py               # Punto de entrada principal (API FastAPI)
+│
+├── /scripts/                 # Scripts auxiliares
+│   ├── __init__.py
+│   └── index_knowledge.py    # Indexación de la base de conocimiento en Pinecone
+│
+├── /ML/                      # Modelos y notebooks de Machine Learning
+│   ├── random-forest.ipynb   # Modelo de predicción de cancelaciones
+│   ├── simulacion-datos.ipynb# Simulación y carga de datos
+│   ├── columnas_modelo.json  # Columnas usadas en el modelo
+│   └── rf_cancelaciones.pkl  # Modelo entrenado
+│
+├── /sql/                     # Scripts y datos SQL
+│   ├── creacion_tablas.sql   # Creación de tablas
+│   ├── datos_reservas.sql    # Datos de ejemplo para reservas
+│   └── tabla-reservas.csv    # Datos en CSV
+│
+├── /data/                    # Datos y base de conocimiento
+│   ├── knowledge-base.txt    # Base de conocimiento en texto
+│   └── clima-pasado.csv      # Datos históricos de clima
+│
+├── /pruebas/                 # Scripts de pruebas y utilidades
+│   ├── carga_s3.py           # Subida de archivos a S3
+│   ├── descarga_s3_bucket.py # Descarga de archivos desde S3
+│   └── pruebas-pinecone.py   # Pruebas de búsqueda en Pinecone
+│
+├── requirements.txt          # Dependencias Python
+├── .env                      # Variables de entorno (no incluido)
+├── .gitignore                # Exclusiones de git
+└── README.md                 # Documentación del proyecto

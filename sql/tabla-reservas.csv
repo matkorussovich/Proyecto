@@ -1,0 +1,19 @@
+"column_name","data_type"
+id_reserva,integer
+id_instalacion,integer
+ds_nombre_cliente,character varying
+dt_fechahora_inicio,timestamp with time zone
+dt_fechahora_fin,timestamp with time zone
+dt_fechahora_creacion,timestamp with time zone
+ds_estado,character varying
+ds_comentarios,text
+ds_telefono,character varying
+es_simulado,boolean
+lluvia,boolean
+probabilidad_cancelacion,double precision
+antelacion_dias,integer
+reservas_previas,integer
+cancelaciones_previas,integer
+es_finde,integer
+es_horario_pico,integer
+es_feriado,integer

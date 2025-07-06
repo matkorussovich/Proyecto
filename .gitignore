@@ -28,6 +28,7 @@ wheels/
 venv/
 env/
 ENV/
+.env
 
 # IDE
 .idea/
@@ -38,3 +39,18 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db 
+
+# Otras
+imagenes
+
+# Ngrok
+*.exe
+
+# Plataforma Web
+PlataformaWeb/
+
+.*
+
+pruebas/
+
+clima-pasado.csv
