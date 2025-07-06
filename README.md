@@ -8,7 +8,7 @@ El desarrollo de este asistente virtual responde a la necesidad de automatizar y
 
 ## Arquitectura y funcionamiento
 
-![Funcionamiento del sistema](imagenes/funcionamiento.png)
+![Funcionamiento del sistema](imagenes/Funcionamiento.png)
 
 El núcleo del sistema es un agente conversacional inteligente basado en LangChain, que integra memoria de conversación, herramientas personalizadas y control adaptativo del diálogo. Este agente recibe mensajes de WhatsApp, interpreta la intención del usuario y, si es necesario, ejecuta funciones auxiliares (como consultar disponibilidad o gestionar reservas) de forma transparente. Gracias a la gestión del historial de conversación, el agente mantiene coherencia y personalización en cada interacción, ofreciendo respuestas precisas y naturales, y adaptándose dinámicamente a las necesidades del usuario.
 
