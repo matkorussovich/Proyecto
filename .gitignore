@@ -40,9 +40,6 @@ ENV/
 .DS_Store
 Thumbs.db 
 
-# Otras
-imagenes
-
 # Ngrok
 *.exe
 
